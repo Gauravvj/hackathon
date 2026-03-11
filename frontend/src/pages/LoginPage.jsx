@@ -31,12 +31,12 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4">
-      <div className="glass-card p-8 w-full max-w-md animate-fade-in">
+    <div className="min-h-screen flex items-center p-20 justify-center px-8 ">
+      <div className="glass-card p-10 w-full max-w-md animate-fade-in">
         {/* Header */}
         <div className="text-center mb-8">
-          <span className="text-5xl mb-4 block">💊</span>
-          <h1 className="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+          <span className="text-5xl mb-8 block">💊</span>
+          <h1 className="text-6xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
             MedReminder
           </h1>
           <p className="text-slate-400 text-sm mt-2">Smart Medicine Reminder for Alzheimer's Patients</p>
@@ -80,14 +80,14 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={loading}
-            className="btn-primary w-full py-3 text-base"
+            className="btn-primary w-full py-5 text-base"
           >
             {loading ? '⏳ Signing in...' : '🔐 Sign In'}
           </button>
         </form>
 
         {/* Register Link */}
-        <p className="text-center text-sm text-slate-500 mt-6">
+        <p className="text-center text-m text-slate-500 mt-10">
           Don't have an account?{' '}
           <Link to="/register" className="text-indigo-400 hover:text-indigo-300 font-medium">
             Register here
